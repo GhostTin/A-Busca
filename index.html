@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>A Busca</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="cenario-passo0.jpg" alt="">
+            <p>Acordei no meio de um caminho de terra, me sinto exausto, mas ainda sim procuro juntar forças para me levantar e tentar entender o que aconteceu, é possível avistar uma placa ao longe, ao se aproximar, percebe que elas apontam dois caminhos distintos, a primeira placa, Ponto do Corvo, a segunda e última, Estra das Oportunidades, talvez em algum desses lugares eu encontre respostas.</p>
+            <button class="btn-proximo" data-proximo="1">Ponto do Corvo</button>
+            <button class="btn-proximo" data-proximo="2">Estrada das Oportunidades</button>
+        </div>
+        <div class="passo" id="passo-0.1">
+            <img src="cenario-passo0.jpg" alt="">
+            <p>Resolvo voltar caminho até as placas, é uma jornada cansativa, mas tomare que valha a pena repensar minhas escolhas.</p>
+            <button class="btn-proximo" data-proximo="1">Ponto do Corvo</button>
+            <button class="btn-proximo" data-proximo="2">Estrada das Oportunidades</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Decido ir até o Ponto do Corvo, talvez seja o nome de algum tipo de posto em que eu possa pedir ajuda, ou talvez até o nome de uma cidade talvez? Enfim, chega de teorias, será que eu continuo o caminho?</p>
+            <button class="btn-proximo" data-proximo="1.1">Continuar</button>
+            <button class="btn-proximo" data-proximo="0.1">Voltar para as placas</button>
+        </div>
+        <div class="passo" id="passo-1.1">
+            <img src="cenario-passo1.1.jpg" alt="">
+            <p>Começo andar por alguns bons minutos, percebo ao longe um pequeno casebre de pedra ao lado de uma torre do mesmo material, nada muito chamativo, percebo uma placa identificando o lugar como “Ponto do Corvo”, e uma pequena estátua de madeira do animal decorando a solitária placa.</p>
+            <button class="btn-proximo" data-proximo="1.2">Entrar no casebre</button>
+            <button class="btn-proximo" data-proximo="1.4">Observar com cautela</button>
+        </div>
+        <div class="passo" id="passo-1.2">
+            <img src="cenario-passo1.2.jpg" alt="">
+            <p>Adentro ao casebre, percebo que “Ponto do Corvo” fazia menção ao nome dessa taverna local, pois estava pouco movimentada, mas com a presença de dois funcionários, rapidamente o taverneiro parece convidar-me para que me aproxime.</p>
+            <button class="btn-proximo" data-proximo="1.3">Me aproximar.</button>
+            <button class="btn-proximo" data-proximo="1.1">Voltar atrás</button>
+        </div>
+        <div class="passo" id="passo-1.3">
+            <img src="cenario-passo1.3.jpg" alt="">
+            <p>Aproveito a situação para tirar dúvidas com o taverneiro, coisas sobre onde estamos e que lugares existem nas proximidades, ele me fala de bom grado bastante sobre a região, suficiente para que eu continue a jornada sozinho após descansar na taverna, acredito que um dia irei fazer coisas incríveis.</p>
+            <button class="btn-proximo" data-proximo="fim">Sair em busca de alguma cidade</button>
+        </div>
+        <div class="passo" id="passo-1.4">
+            <p>Antes de fazer qualquer coisa, observo com cautela, ao me aproximar de uma janela, vejo o que se parece uma Taverna, algumas pessoas aqui e ali, e o Taverneiro, que parece ter me notado e faz um sinal com a mão para que eu entre.</p>
+            <button class="btn-proximo" data-proximo="1.2">Entrar no casebre</button>
+            <button class="btn-proximo" data-proximo="0.1">Sair e voltar para as placas imediatamente</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <img src="cenario-passo2.jpg" alt="">
+            <p>Ando por muito tempo, bastante mesmo, até que finalmente chego próximo de um caminho de tijolos de pedra, são simples mas agradam o olhar. Ao caminhar por eles, vejo uma carroça passando, será sorte?</p>
+            <button class="btn-proximo" data-proximo="2.1">Tentar chamar atenção do carroceiro</button>
+            <button class="btn-proximo" data-proximo="2.2">Continuar o caminho sozinho</button>
+            <button class="btn-proximo" data-proximo="0.1">Voltar para as placas</button>
+        </div>
+        <div class="passo" id="passo-2.1">
+            <img src="cenario-passo2.1.jpg" alt="">
+            <p>Ao tentar chamar atenção do carroceiro, por sorte, boa vontade do senhor ou destino, consigo fazê-lo parar para conversar.</p>
+            <p>O jovem carroceiro, com cargas simples em sua carroça e um burrinho tudo, se vira para me ouvir, o que será que devo dizer?</p>
+            <button class="btn-proximo" data-proximo="2.3">Pedir ajuda</button>
+            <button class="btn-proximo" data-proximo="2.4">Pedir informações sobre a região</button>
+            <button class="btn-proximo" data-proximo="2.5">Continuar o caminho sozinho</button>
+        </div>
+        <div class="passo" id="passo-2.3">
+            <p>O jovem carroceiro parece bem contente em me ajudar ao ouvir sobre minha situação, ele pede somente que eu ajude ele a descarregar a carroça quando chegar em uma cidadela próxima, talvez lá consiga reestabelecer minha vida depois de acordar nesse lugar esquisito.</p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar</button>
+        </div>
+        <div class="passo" id="passo-2.4">
+            <img src="cenario-passo2.1.jpg" alt="">
+            <p>O jovem carroceiro parece bem contente em me ajudar ao ouvir sobre minha situação, ele pede somente que eu ajude ele a descarregar a carroça quando chegar em uma cidadela próxima, talvez lá consiga reestabelecer minha vida depois de acordar nesse lugar esquisito.</p>
+            <button class="btn-proximo" data-proximo="2.3">Explicar a situação e pedir ajuda.</button>
+            <button class="btn-proximo" data-proximo="2.5">Responder vagamente e ir embora</button>
+        </div>
+        <div class="passo" id="passo-2.5">
+            <p>Resolvo continuar o caminho sozinho, é perigoso confiar demais nas pessoas que conheci a pouco tempo, não sei o que posso acabar me envolvendo, resolvo ir sozinho até a cidadela mais próxima, o carroceiro me deseja boa sorte na viagem, tenho boas espectativas sobre o que posso acabar tendo de oportunidades na cidadela próxima caso eu encontre.</p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar</button>
+        </div>
+        <div class="passo" id="passo-fim">
+            <p>Resolvo sair em uma jornada para conseguir me reestabelecer nesse lugar, talvez eventualmente descobrir um pouco de como fui parar ali, espero que dê tudo certo...</p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
